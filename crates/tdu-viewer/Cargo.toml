@@ -1,0 +1,10 @@
+[package]
+name = "tdu-viewer"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+eframe = "0.33"
+png = "0.17"
+tdu-assets = { path = "../tdu-assets" }
+tdu-formats = { path = "../tdu-formats" }

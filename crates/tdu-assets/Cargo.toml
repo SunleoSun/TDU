@@ -1,0 +1,11 @@
+[package]
+name = "tdu-assets"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+rayon = "1.10"
+tdu-formats = { path = "../tdu-formats" }
+
+[lib]
+path = "src/lib.rs"

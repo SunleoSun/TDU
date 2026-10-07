@@ -1,0 +1,21 @@
+[workspace]
+members = [
+    "crates/tdu-formats",
+    "crates/tdu-assets",
+    "crates/tdu-cli",
+    "crates/tdu-viewer",
+    "crates/suntdu-runtime",
+    "crates/suntdu-d3d9-probe",
+]
+resolver = "3"
+
+[workspace.package]
+edition = "2024"
+
+[profile.dev.package.tdu-assets]
+opt-level = 3
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
